@@ -1,0 +1,29 @@
+紀錄 top-3召回結果與 cosine distance。
+
+ 1.英文 How does chaining resolve collisions?
+Top-1  召回結果: clrs11-0002   Cosine Distance: 1.1478
+Top-2  召回結果: clrs11-0002   Cosine Distance: 1.1478
+Top-3  召回結果: clrs11-0005   Cosine Distance: 1.4972
+
+
+ 2.英文 What is linear probing?
+Top-1  召回結果: clrs11-0006   Cosine Distance: 1.4086
+Top-2  召回結果: clrs11-0006   Cosine Distance: 1.4086
+Top-3  召回結果: clrs11-0007   Cosine Distance: 1.4709
+
+  3.中文 除法雜湊如何運作?
+Top-1  召回結果: clrs11-0006   Cosine Distance: 1.8020
+Top-2  召回結果: clrs11-0006   Cosine Distance: 1.8020
+Top-3  召回結果: clrs11-0005   Cosine Distance: 1.8339
+
+  4.中文 如何解決碰撞？
+Top-1  召回結果: clrs11-0006   Cosine Distance: 1.9638
+Top-2  召回結果: clrs11-0006   Cosine Distance: 1.9638
+Top-3  召回結果: clrs11-0007   Cosine Distance: 1.9804
+
+
+
+
+
+
+

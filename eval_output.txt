@@ -1,0 +1,26 @@
+
+(rag-ch11) C:\Users\winnie\alg_ch11_p79_ex>python eval.py
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|██████████████████████████| 103/103 [00:00<00:00, 13724.73it/s]
+結果  query                                           expected            top-1 dist
+------------------------------------------------------------------------------------------
+ ✓   What is a direct-address table?                 direct-address      1.0111
+ ✓   How does chaining resolve collisions?           chaining            1.1478
+ ✓   Explain the division method for hashing.        division            0.7965
+ ✓   What is universal hashing?                      universal           0.8775
+ ✓   How does linear probing handle collisions?      linear probing      1.3133
+ ✓   What is double hashing?                         double hashing      0.8823
+ ✓   Define perfect hashing.                         perfect hashing     0.9656
+ ✓   What is the load factor in a hash table?        load factor         0.8689
+ ✗   什麼是雜湊衝突?                                        collision           1.9429
+ ✗   除法雜湊法怎麼運作?                                      division            1.8005
+ ✗   什麼是完美雜湊?                                        perfect hashing     1.8231
+------------------------------------------------------------------------------------------
+recall@3 = 8/11 = 73%
+
+觀察重點:
+  1. 英文 query 應幾乎全中,因為文件就是英文。
+  2. 中文 query 命中率較低 — all-MiniLM-L6-v2 主要訓練於英文。
+     若要更好的跨語言效果,可改用 paraphrase-multilingual-MiniLM-L12-v2。
+
+
